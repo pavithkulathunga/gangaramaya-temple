@@ -1,29 +1,30 @@
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import headerBg1 from '../images/headerbg.png';
 import headerBg2 from '../images/headerbg2.png';
-import { motion } from "framer-motion";
 
 function Header() {
-    return (
-        <motion.header className="bg-cover bg-center h-screen"  
-            initial={{
-                backgroundImage: `url(${headerBg1})`
-            }}
+    const [currentBg, setCurrentBg] = useState(headerBg1);
 
-            animate={{
-                backgroundImage: `url(${headerBg2})`
-            }}
-            transition={{
-                // repeat: Infinity,
-                delay: 2,
-                duration: 2,
-                type: "tween"
-            }}
-        >
+    useEffect(() => {
+        // Function to switch between background images
+        const switchBackground = () => {
+            setCurrentBg((prevBg) => (prevBg === headerBg1 ? headerBg2 : headerBg1));
+        };
+
+        // Set interval to switch background images every 5 seconds
+        const intervalId = setInterval(switchBackground, 5000);
+
+        // Clear interval on component unmount
+        return () => clearInterval(intervalId);
+    }, []);
+
+    return (
+        <header className="bg-cover bg-center h-screen" style={{ backgroundImage: `url(${currentBg})` }}>
             <section className="flex mx-10 pt-8 justify-between">
                 <img src={logo} className="h-14" alt="logo" />
-                <nav className="flex items-center">   
+                <nav className="flex items-center">
                     <ul className="flex text-xs space-x-7 font-medium">
                         <li><Link to={'#'}>ABOUT US & EVENTS</Link></li>
                         <li><Link to={'#'}>ANNUAL PAGENT & VESAK FESTIVAL</Link></li>
@@ -35,7 +36,7 @@ function Header() {
                     </ul>
                 </nav>
             </section>
-        </motion.header>
+        </header>
     );
 }
 
