@@ -3,6 +3,7 @@ import Layout3 from "../components/home/Layout3"
 import Layout4 from "../components/home/Layout4"
 import Layout5 from "../components/home/Layout5"
 import Layout6 from "../components/home/Layout6"
+import Layout7 from "../components/Footer"
 
 const Home = () => {
   return (

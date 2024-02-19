@@ -7,6 +7,7 @@ import image9 from '../../images/image9.png'
 const Layout3 = () => {
   return (
     <div>
+      <div className="bg-white h-20"></div>
       <div className="bg-cover bg-center flex pt-20 bg-white" style={{ backgroundImage: `url(${image5})` }}>
         <img src={image6} className=" h-96 mx-40 mt-14" alt="image6" /> 
         <div className="mt-16">

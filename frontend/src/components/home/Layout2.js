@@ -3,6 +3,8 @@ import image4 from '../../images/image4.png';
 
 const layout2 = () => {
   return (
+    <div>
+      <div className="bg-white h-20"></div>
     <div className="bg-no-repeat bg-left bg-contain bg-white" style={{ backgroundImage: `url(${image4})` }}>
       <div className='row'>
         <div className=' mx-56 pt-20 text-[#3a3a3a] text-xl font-bold'>Gangaramaya welcomes donations from well-wishers for the numerous 
@@ -30,6 +32,7 @@ const layout2 = () => {
       <br/><br/>
       <br/><br/>
       
+  </div>
   </div>
   )
 }
