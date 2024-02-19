@@ -9,8 +9,8 @@ import gangaramaya from '../../images/gangaramaya.png'
 
 const Layout5 = () => {
   return (
-    <div className="bg-no-repeat bg-right bg-contain" style={{ backgroundImage: `url(${image4})`, }}>
-      <div className="row flex justify-center my-8">
+    <div className="bg-no-repeat bg-right bg-contain bg-white" style={{ backgroundImage: `url(${image4})`, }}>
+      <div className="row flex justify-center py-8">
         <button className='btn bg-[#C58735] text-white py-1 px-20 rounded'>Read More</button>
       </div>
       <div>
@@ -35,6 +35,7 @@ const Layout5 = () => {
           <img src={image14} className="h-96" alt="image14" /> 
         </div>
       </div>
+      <br /> <br />
     </div>
   );
 };

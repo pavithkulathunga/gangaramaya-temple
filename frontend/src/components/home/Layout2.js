@@ -3,9 +3,9 @@ import image4 from '../../images/image4.png';
 
 const layout2 = () => {
   return (
-    <div className="bg-no-repeat bg-left bg-contain" style={{ backgroundImage: `url(${image4})` }}>
+    <div className="bg-no-repeat bg-left bg-contain bg-white" style={{ backgroundImage: `url(${image4})` }}>
       <div className='row'>
-        <div className=' mx-56 mt-20 text-[#3a3a3a] text-xl font-bold'>Gangaramaya welcomes donations from well-wishers for the numerous 
+        <div className=' mx-56 pt-20 text-[#3a3a3a] text-xl font-bold'>Gangaramaya welcomes donations from well-wishers for the numerous 
     religious, social, educational and cultural services projects which are being 
     organized throughout the year</div>
         </div>

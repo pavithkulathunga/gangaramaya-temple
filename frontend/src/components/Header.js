@@ -21,7 +21,7 @@ function Header() {
     }, []);
 
     return (
-        <header className="bg-cover bg-center h-screen" style={{ backgroundImage: `url(${currentBg})` }}>
+        <header className="bg-cover bg-center h-screen bg-white" style={{ backgroundImage: `url(${currentBg})` }}>
             <section className="flex mx-10 pt-8 justify-between">
                 <img src={logo} className="h-14" alt="logo" />
                 <nav className="flex items-center">
