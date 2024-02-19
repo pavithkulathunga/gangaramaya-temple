@@ -1,8 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from './layout/Layout';
-import Layout2 from './components/Layout2';
-import Layout3 from './components/Layout3';
+import Home from "./pages/Home";
 
 
 
@@ -15,13 +14,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Layout2 />,
+        element: <Home />,
       },
-      {
-        index: true,
-        element: <Layout3 />,
-      },
-
     ],
   },
 ]);
